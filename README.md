@@ -53,23 +53,26 @@ For Windows:
 3. Add the following line in your Python code to link it:
 
 `import pytesseract`
+
 `pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'`
 
  For Linux:
  
 `sudo apt update`
+
 `sudo apt install tesseract-ocr`
 
 For Mac:
 
 `brew install tesseract`
+
 4. Install YOLOv8 (via Ultralytics)
 
 Used for object detection:
 
 `pip install ultralytics`
 
-You can test installation with:
+You can test the installation with:
 
 `yolo help`
 
