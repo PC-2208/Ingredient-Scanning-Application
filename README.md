@@ -29,37 +29,66 @@ Your Ingredient Scanning Application is an AI-powered tool that:
 # Required Installation & Libraries
 
 1. Install OpenCV
+   
 Used for image and video processing.
+
 `pip install opencv-python`
+
 2. Install pytesseract (Python wrapper for Tesseract OCR)
+   
 `pip install pytesseract`
+
 3. Install Tesseract-OCR Engine (Required for pytesseract)
+   
 For Windows:
+
 1. Download from:
+   
 `👉 https://github.com/UB-Mannheim/tesseract/wiki`
+
 2. Install it. Default path:
+
 `C:\Program Files\Tesseract-OCR\tesseract.exe`
+
 3. Add the following line in your Python code to link it:
-`import pytesseract
-pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'`
+
+`import pytesseract`
+`pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'`
+
  For Linux:
-`sudo apt update
-sudo apt install tesseract-ocr`
+ 
+`sudo apt update`
+`sudo apt install tesseract-ocr`
+
 For Mac:
+
 `brew install tesseract`
 4. Install YOLOv8 (via Ultralytics)
+
 Used for object detection:
+
 `pip install ultralytics`
+
 You can test installation with:
+
 `yolo help`
+
 5. Install Pillow
+
 Used to handle image files (works with `Image` from PIL)
+
 `pip install pillow`
+
 6. Install Pandas
+
 For reading/writing and handling Excel or CSV files.
+
 `pip install pandas`
+
 7. Install Scikit-learn
+
 Used for text processing (TF-IDF, cosine similarity).
+
 `pip install scikit-learn`
 
 # How It Works (Step-by-Step)
